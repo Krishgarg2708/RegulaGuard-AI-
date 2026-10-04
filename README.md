@@ -1,180 +1,225 @@
-# 🛡️ RegulaGuard AI
+# RegulaGuard AI
 
-### AI-Powered Banking Risk, Fraud & Compliance Copilot
+## AI-Powered Banking Risk, Fraud & Compliance Copilot
 
 > **Turn Risk Signals into Evidence-Backed, Audit-Ready Decisions.**
 
-RegulaGuard AI is an intelligent **Risk & Compliance Copilot for Banks and NBFCs** that connects transaction data, account behavior, risk signals, regulatory policies, and evidence into one governed workflow.
+RegulaGuard AI is an AI-powered Risk and Compliance Copilot designed for banks and NBFCs. It combines transaction data, account behavior, risk signals, regulatory policies, and supporting evidence to help fraud, AML, risk, and compliance teams investigate issues and produce structured, audit-ready outputs.
 
-Instead of forcing compliance and risk teams to manually investigate transactions, search through policies, collect evidence, and prepare reports, RegulaGuard AI helps them move from:
+Instead of treating AI as a simple chatbot, RegulaGuard AI creates a governed workflow connecting:
 
-**Signal → Investigation → Evidence → Policy → Finding → Regulatory Output → Audit Trail**
+```text
+Risk Signal
+     ↓
+Investigation
+     ↓
+Evidence
+     ↓
+Policy
+     ↓
+Explainable Finding
+     ↓
+Regulatory Report
+     ↓
+Audit Trail
+```
 
-The system allows business, fraud, risk, and compliance users to ask questions in natural language and receive **explainable, evidence-backed, policy-grounded answers**.
+The platform enables business and compliance users to ask natural-language questions and receive explainable, evidence-backed answers with traceability to the underlying data and applicable policies.
 
 ---
 
-## 🚨 The Problem
+# 1. Problem Statement
 
-Banks and NBFCs process enormous amounts of financial data every day.
+Banks and NBFCs process millions of transactions and continuously monitor multiple forms of financial risk.
 
-Risk and compliance teams need to continuously monitor:
+Risk and compliance teams are responsible for:
 
-- 💳 Suspicious transactions
-- 🕵️ Fraud patterns
-- 🧾 AML activity
-- 📊 Credit risk
-- 💧 Liquidity risk
-- 📚 Regulatory requirements
-- 🔍 Internal investigations
-- 📝 Audit and regulatory reporting
+- Fraud detection
+- AML monitoring
+- Credit risk assessment
+- Liquidity risk monitoring
+- Regulatory compliance
+- Investigation management
+- Evidence collection
+- Audit preparation
+- Regulatory reporting
 
-The problem is that these workflows are often fragmented.
+However, many of these activities remain fragmented and heavily dependent on manual investigation.
 
-A typical investigation may require an analyst to:
+A typical investigation requires an analyst to:
 
 ```text
-Find Alert
-   ↓
+Identify Alert
+      ↓
 Search Transactions
-   ↓
-Check Account History
-   ↓
+      ↓
+Review Account History
+      ↓
 Investigate Customer
-   ↓
+      ↓
 Search Policies
-   ↓
+      ↓
 Collect Evidence
-   ↓
-Write Findings
-   ↓
+      ↓
+Analyze Risk
+      ↓
+Document Finding
+      ↓
 Prepare Report
-   ↓
+      ↓
 Maintain Audit Trail
 ```
 
-This process is time-consuming, difficult to scale, and vulnerable to inconsistent documentation.
+This creates several challenges:
 
-### RegulaGuard AI changes this workflow.
-
-```text
-                ┌─────────────────────┐
-                │ Transaction &       │
-                │ Account Data        │
-                └──────────┬──────────┘
-                           ↓
-                ┌─────────────────────┐
-                │ Risk Signal Engine  │
-                └──────────┬──────────┘
-                           ↓
-                ┌─────────────────────┐
-                │ AI Investigation    │
-                └──────────┬──────────┘
-                           ↓
-              ┌──────────────────────────┐
-              │ Evidence + Policy Match  │
-              └────────────┬─────────────┘
-                           ↓
-                ┌─────────────────────┐
-                │ Explainable Finding │
-                └──────────┬──────────┘
-                           ↓
-                ┌─────────────────────┐
-                │ Report Generation   │
-                └──────────┬──────────┘
-                           ↓
-                ┌─────────────────────┐
-                │ Audit Trail         │
-                └─────────────────────┘
-```
+- High investigation time
+- Fragmented information
+- Manual evidence collection
+- Inconsistent documentation
+- Difficulty connecting policies with real transactions
+- Limited explainability
+- Increased operational workload
+- Difficulty maintaining complete audit trails
 
 ---
 
-# 💡 Our Solution
+# 2. Our Solution
 
 RegulaGuard AI provides a unified intelligence layer for banking risk and compliance operations.
 
-### 🔎 Detect
+The platform combines structured financial data with unstructured regulatory and policy documents and uses AI to assist analysts throughout the investigation lifecycle.
 
-Identify suspicious activity across:
+The system focuses on three core capabilities:
 
-- Fraud
-- AML
+### Detect
+
+Identify suspicious activity and risk signals across:
+
+- Transactions
+- Accounts
+- Customers
+- Fraud patterns
+- AML activity
 - Credit risk
 - Liquidity risk
-- Transaction anomalies
-- Account behavior
 
-### 🧠 Explain
+### Explain
 
-Don't just provide a risk score.
+Explain why a particular transaction, account, or customer has been classified as risky.
 
-Show:
+Every major assessment can include:
 
-- Why the transaction was flagged
-- Which signals contributed to the score
-- Which transactions support the finding
-- Which policy applies
-- How confident the system is
+- Risk score
+- Contributing factors
+- Supporting evidence
+- Applicable policy
+- Confidence
+- Recommended action
 
-### 📑 Document
+### Document
 
-Convert investigations into structured:
+Convert investigations into structured outputs such as:
 
-- Findings
 - Investigation summaries
-- Compliance reports
+- Compliance findings
 - Audit evidence packs
+- Risk reports
 - Regulatory report drafts
-
-### 🧾 Audit
-
-Maintain a traceable record of:
-
-- User actions
-- AI analysis
-- Evidence
-- Policies
-- Decisions
-- Approvals
-- Generated reports
 
 ---
 
-# 🚀 Core Features
+# 3. Core Workflow
 
-## 1. 📊 Executive Risk Dashboard
+RegulaGuard AI is built around a complete risk-to-report workflow.
 
-A centralized view of the organization's risk posture.
+```text
+                    Financial Data
+                         |
+                         v
+                Risk Signal Engine
+                         |
+                         v
+                   Risk Scoring
+                         |
+                         v
+                  Investigation
+                         |
+              +----------+----------+
+              |                     |
+              v                     v
+         Evidence Layer       Policy Retrieval
+              |                     |
+              +----------+----------+
+                         |
+                         v
+                  AI Explanation
+                         |
+                         v
+                    Finding
+                         |
+                         v
+                Report Generation
+                         |
+                         v
+                   Human Review
+                         |
+                         v
+                    Audit Trail
+```
 
-### Key metrics
+This ensures that the AI is not simply generating an answer. It is assisting with a traceable investigation.
+
+---
+
+# 4. Key Features
+
+## 4.1 Executive Risk Dashboard
+
+A centralized dashboard provides an overview of the organization's risk posture.
+
+### Key Metrics
 
 - Total Transactions
+- High-Risk Transactions
 - Fraud Alerts
 - AML Alerts
 - High-Risk Accounts
+- Open Investigations
 - Credit Risk
 - Liquidity Risk
-- Open Investigations
+- Regulatory Reports
 - Audit Readiness
 
 Example:
 
 ```text
-┌────────────────┬────────────────┬────────────────┐
-│  ₹48.7M        │      127       │       34       │
-│ Transactions   │ Risk Alerts    │ AML Alerts     │
-├────────────────┼────────────────┼────────────────┤
-│      18        │       42       │       94%      │
-│ Fraud Alerts   │ High Risk Accts│ Audit Ready    │
-└────────────────┴────────────────┴────────────────┘
+Total Transactions       ₹48.7M
+High-Risk Transactions   127
+AML Alerts               34
+Fraud Alerts             18
+High-Risk Accounts       42
+Open Investigations      16
+Reports Ready            9
+Audit Readiness          94%
 ```
 
 ---
 
-# 🕵️ 2. Fraud Detection
+# 5. Fraud Detection
 
-RegulaGuard AI identifies suspicious transaction behavior using explainable risk signals.
+The Fraud Detection module identifies unusual transaction behavior and provides an explainable risk score.
+
+The system can analyze:
+
+- Transaction amount
+- Historical transaction behavior
+- Transaction velocity
+- Geographic location
+- Device information
+- Beneficiary changes
+- Account history
+- Transaction timing
+- Behavioral anomalies
 
 ### Example
 
@@ -190,9 +235,12 @@ Deviation
 
 Risk Score
 94 / 100
+
+Severity
+CRITICAL
 ```
 
-### Contributing Factors
+### Risk Factors
 
 ```text
 +35  Unusual transaction amount
@@ -200,33 +248,37 @@ Risk Score
 +15  High transaction velocity
 +14  Geographic anomaly
 +10  New beneficiary
---------------------------------
-94   CRITICAL
+-------------------------------
+94   Critical Risk
 ```
 
-Instead of simply saying:
+Instead of returning only:
 
-> "This transaction is suspicious."
+> Transaction flagged as suspicious.
 
-the system explains:
+RegulaGuard AI provides an explanation such as:
 
-> "The transaction is 20.8x the customer's historical average, occurred shortly after a new beneficiary was created, and originated from a previously unseen device."
+> The transaction is significantly above the customer's historical transaction pattern, occurred shortly after a new beneficiary was added, and originated from a previously unseen device.
 
 ---
 
-# 🧾 3. AML Monitoring
+# 6. AML Monitoring
 
-Detect potential AML patterns such as:
+The AML module helps analysts identify potentially suspicious transaction patterns.
 
-- Structuring / smurfing
+Supported patterns include:
+
+- Structuring
+- Smurfing
 - Rapid movement of funds
-- Unusual cash activity
 - Circular transactions
-- High-risk jurisdictions
-- Sudden account behavior changes
 - Multiple accounts receiving funds
+- High-risk jurisdictions
+- Unusual cash activity
+- Sudden account behavior changes
+- Dormant account activation
 
-Each AML case includes:
+Each AML case contains:
 
 ```text
 Case ID
@@ -242,25 +294,25 @@ Recommended Action
 Status
 ```
 
-### Case lifecycle
+### Case Lifecycle
 
 ```text
 OPEN
- ↓
+  ↓
 UNDER REVIEW
- ↓
+  ↓
 ESCALATED
- ↓
+  ↓
 CLEARED / REPORTED
 ```
 
 ---
 
-# 💳 4. Credit Risk Intelligence
+# 7. Credit Risk Intelligence
 
-Monitor borrower and loan-level risk.
+The Credit Risk module provides an explainable view of borrower risk.
 
-The system analyzes:
+The system considers:
 
 - Credit score
 - Debt-to-income ratio
@@ -269,16 +321,28 @@ The system analyzes:
 - Days past due
 - Credit utilization
 - Probability of default
+- Repayment behavior
 
-Example:
+### Example
 
-> Risk increased from **42 → 78** because the borrower missed two payments, utilization increased by 31%, and monthly obligations exceeded the configured risk threshold.
+```text
+Customer: CUST-1042
+
+Credit Risk Score: 78 / 100
+Risk Category: HIGH
+```
+
+Explanation:
+
+> Risk increased because the borrower missed two payments, credit utilization increased significantly, and monthly financial obligations exceeded the configured risk threshold.
 
 ---
 
-# 💧 5. Liquidity Risk Monitoring
+# 8. Liquidity Risk Monitoring
 
-Track important liquidity indicators:
+The Liquidity Risk module provides visibility into important liquidity indicators.
+
+It monitors:
 
 - Cash position
 - High Quality Liquid Assets
@@ -288,123 +352,173 @@ Track important liquidity indicators:
 - Funding concentration
 - Liquidity stress level
 
-The system highlights deteriorating liquidity conditions and explains the contributing factors.
+The system can surface potential liquidity deterioration and explain which indicators contributed to the increased risk.
 
 ---
 
-# 🤖 6. AI Compliance Copilot
+# 9. AI Risk & Compliance Copilot
 
-The Copilot allows users to interact with banking risk data using natural language.
+The Copilot allows business, risk, fraud, and compliance users to interact with the platform using natural language.
 
-### Example questions
+### Example Questions
 
 ```text
 Show today's top 10 risk signals.
 
-Why was TXN-10882 flagged?
+Why was transaction TXN-10882 flagged?
 
 Find accounts showing possible structuring activity.
 
 Why is customer CUST-1042 high risk?
 
+Which customers have unusual transaction activity?
+
 Show evidence supporting this fraud alert.
 
 Which policy applies to AML-2048?
 
+What evidence supports this finding?
+
 Generate an investigation summary.
 
-Create an audit-ready finding.
+Generate an audit-ready finding.
 
-Generate a regulatory report draft.
+Create a regulatory report draft.
 ```
+
+The user does not need to know SQL, database structure, or document locations.
 
 ---
 
-# 🧠 7. Evidence-Grounded AI
+# 10. Evidence-Grounded AI
 
-RegulaGuard AI is designed around a critical principle:
+A core principle of RegulaGuard AI is:
 
-> **AI should not make unsupported compliance claims.**
+> AI-generated conclusions should be supported by evidence.
 
 Every important AI response is structured around:
 
 ```text
-ANSWER
-   ↓
-REASONING
-   ↓
-EVIDENCE
-   ↓
-POLICY
-   ↓
-CONFIDENCE
-   ↓
-RECOMMENDED ACTION
+Answer
+  ↓
+Reasoning
+  ↓
+Evidence
+  ↓
+Policy
+  ↓
+Confidence
+  ↓
+Recommended Action
 ```
 
 ### Example
 
 **Question**
 
-> Why was account ACC-1023 flagged?
+```text
+Why was account ACC-1023 flagged?
+```
 
 **Answer**
 
-The account was flagged because of abnormal transaction velocity and a sudden increase in transaction value.
+```text
+The account was flagged due to abnormal transaction
+velocity and a significant increase in transaction value.
+```
 
 **Risk Score**
 
-`91 / 100`
+```text
+91 / 100
+```
+
+**Key Signals**
+
+```text
+14 transactions within 30 minutes
+Transaction value significantly above historical average
+New beneficiary
+Unusual account behavior
+```
 
 **Evidence**
 
-- TXN-10821
-- TXN-10822
-- TXN-10827
-- Account transaction history
-- Beneficiary history
+```text
+TXN-10821
+TXN-10822
+TXN-10827
+Account transaction history
+Beneficiary history
+```
 
-**Policy**
+**Applicable Policy**
 
-`AML-TRX-07`
+```text
+AML-TRX-07
+```
 
 **Confidence**
 
-`94%`
+```text
+94%
+```
 
-**Recommendation**
+**Recommended Action**
 
+```text
 Enhanced Due Diligence and analyst review.
+```
 
 ---
 
-# 📚 8. Policy & Regulatory Intelligence
+# 11. RAG and Policy Intelligence
 
-RegulaGuard AI combines structured financial data with unstructured regulatory and policy documents.
+RegulaGuard AI combines structured banking data with unstructured compliance documents.
 
-### Data sources
+### Structured Data
+
+- Customers
+- Accounts
+- Transactions
+- Loans
+- Alerts
+- Risk Scores
+- Cases
+
+### Unstructured Data
+
+- AML policies
+- Regulatory guidelines
+- Internal compliance policies
+- Risk policies
+- Filing instructions
+- Basel-related documents
+- Investigation procedures
+
+The system uses Retrieval-Augmented Generation to retrieve relevant policy and regulatory context before generating an answer.
 
 ```text
-Transaction Data
-       +
-Account Data
-       +
-Customer Data
-       +
-Risk Signals
-       +
-AML Policies
-       +
-Regulatory Documents
-       +
-Internal Policies
-       ↓
-     RAG
-       ↓
-Grounded AI Response
+Documents
+    ↓
+Document Processing
+    ↓
+Chunking
+    ↓
+Embeddings
+    ↓
+Vector Database
+    ↓
+Retriever
+    ↓
+Relevant Evidence
+    ↓
+LLM
+    ↓
+Grounded Response
 ```
 
-Users can inspect:
+Each retrieved document can expose:
 
 - Document name
 - Policy ID
@@ -413,17 +527,17 @@ Users can inspect:
 - Source
 - Last updated date
 
-The system should never fabricate regulatory requirements.
+If sufficient evidence cannot be found, the system should explicitly state:
 
-If sufficient evidence is unavailable, the Copilot responds:
-
-> **"Insufficient evidence to support a definitive conclusion."**
+> Insufficient evidence to support a definitive conclusion.
 
 ---
 
-# 🔍 9. Evidence Explorer
+# 12. Evidence Explorer
 
-Every finding can be traced back to its underlying evidence.
+The Evidence Explorer provides traceability between AI-generated findings and the underlying data.
+
+The investigation chain is:
 
 ```text
 Finding
@@ -441,60 +555,66 @@ Policy
 Evidence
 ```
 
-This creates a transparent chain from the AI conclusion back to the original data.
+Users can drill down from a finding to the original transaction and policy evidence supporting the conclusion.
+
+This improves transparency and auditability.
 
 ---
 
-# 🧑‍💼 10. Investigation Workspace
+# 13. Investigation Workspace
 
-Each investigation gets a dedicated workspace.
+Every investigation has a dedicated workspace.
 
 ### Example
 
 ```text
-CASE: AML-2048
+CASE ID
+AML-2048
 
+TITLE
 Potential Structuring Activity
 
-Risk:
-🔴 CRITICAL
+RISK
+CRITICAL
 
-Customer:
+CUSTOMER
 CUST-1042
 
-Account:
+ACCOUNT
 ACC-88321
 
-Status:
+STATUS
 UNDER REVIEW
 ```
 
-The analyst can inspect:
+The workspace provides:
 
-- Timeline
+- Investigation timeline
 - Transactions
 - Related accounts
 - Risk signals
 - Evidence
-- Policies
+- Applicable policies
 - AI analysis
 - Analyst notes
 
-Available actions:
+### Available Actions
 
 ```text
-[ Escalate ]
-[ Clear Alert ]
-[ Request Review ]
-[ Generate Finding ]
-[ Generate Report ]
+Escalate
+Clear Alert
+Request Review
+Generate Finding
+Generate Report
 ```
 
 ---
 
-# 🕸️ 11. Transaction Network Analysis
+# 14. Transaction Network Analysis
 
-RegulaGuard AI visualizes relationships between:
+RegulaGuard AI provides graph-based visualization of financial relationships.
+
+### Nodes
 
 - Customers
 - Accounts
@@ -502,58 +622,81 @@ RegulaGuard AI visualizes relationships between:
 - Beneficiaries
 - Merchants
 
+### Relationships
+
+- Owns
+- Transfers To
+- Receives From
+- Pays
+- Associated With
+
 Example:
 
 ```text
 Customer A
-    │
-    ▼
+    |
+    v
 Account A
-    │
-    ├────────► Account B
-    │             │
-    │             ▼
-    │         Account C
-    │             │
-    │             ▼
-    └──────► High-Risk Merchant
+    |
+    +-------> Account B
+                 |
+                 v
+              Account C
+                 |
+                 v
+          High-Risk Merchant
 ```
 
-This allows investigators to identify suspicious relationships that may not be obvious from individual transactions.
+This allows analysts to identify relationships and transaction paths that may not be obvious from individual records.
 
 ---
 
-# 📄 12. Audit-Ready Report Generation
+# 15. Regulatory Report Generation
 
-RegulaGuard AI converts an investigation into a structured report draft.
+RegulaGuard AI can transform an investigation into a structured report draft.
 
-### Report includes
+Supported outputs include:
 
-- Report ID
-- Case ID
-- Date
-- Executive Summary
-- Risk Assessment
-- Key Findings
-- Supporting Evidence
-- Applicable Policy
-- Transactions
-- Timeline
-- Analyst Conclusion
-- Recommended Action
-- Audit Trail
+- AML Investigation Summary
+- Suspicious Activity Report Draft
+- Risk Finding Report
+- Internal Compliance Report
+- Audit Evidence Pack
+- Regulatory Review Summary
 
-Every generated report clearly states:
+### Report Structure
 
-> ⚠️ **AI-GENERATED DRAFT — HUMAN REVIEW REQUIRED**
+```text
+Report ID
+Case ID
+Date
+Subject
+Executive Summary
+Risk Assessment
+Key Findings
+Supporting Evidence
+Applicable Policy
+Relevant Transactions
+Investigation Timeline
+Analyst Conclusion
+Recommended Action
+Audit Trail
+```
+
+Every AI-generated regulatory output is clearly marked:
+
+```text
+AI-GENERATED DRAFT
+HUMAN REVIEW REQUIRED
+```
 
 The system does not claim to automatically submit official regulatory filings.
 
 ---
 
-# 🧾 13. Complete Audit Trail
+# 16. Audit Trail
 
-All major actions are recorded.
+The Audit Trail records important investigation actions.
 
 Example:
 
@@ -579,99 +722,170 @@ System
 Generated report draft
 ```
 
-This provides traceability across the investigation lifecycle.
+The audit trail helps establish:
+
+- Who performed an action
+- What action was performed
+- When it occurred
+- Which case was involved
+- Which evidence was used
+- What AI output was generated
+- What decision was made
 
 ---
 
-# 🔐 AI Governance & Guardrails
+# 17. AI Governance
 
-Financial AI cannot operate as an unrestricted chatbot.
+Financial AI requires stronger controls than a conventional chatbot.
 
 RegulaGuard AI therefore includes:
 
 - Evidence grounding
 - Policy retrieval
 - Confidence scoring
-- Human approval
-- Role-based access
+- Human-in-the-loop review
+- Role-based access control
 - Audit logging
 - PII masking
 - Input validation
 - Prompt injection protection
 - Unsupported-claim prevention
 
-### Core principle
+### Decision Model
 
 ```text
-AI Recommendation
-       ↓
+AI Analysis
+     ↓
 Human Review
-       ↓
+     ↓
 Approved Decision
-       ↓
+     ↓
 Audit Trail
 ```
 
+The AI assists analysts; it does not independently make final regulatory decisions.
+
 ---
 
-# 🏗️ System Architecture
+# 18. Risk Scoring Engine
+
+The platform uses an explainable risk scoring model.
+
+A simplified risk score can be represented as:
 
 ```text
-                         ┌───────────────────────┐
-                         │      Web Client       │
-                         │ React + TypeScript    │
-                         └───────────┬───────────┘
-                                     │
-                                     ▼
-                         ┌───────────────────────┐
-                         │       API Layer       │
-                         │   FastAPI / Node.js   │
-                         └───────────┬───────────┘
-                                     │
-               ┌─────────────────────┼─────────────────────┐
-               │                     │                     │
-               ▼                     ▼                     ▼
-      ┌────────────────┐   ┌────────────────┐   ┌────────────────┐
-      │ Risk Engine    │   │ Investigation  │   │ Report Engine  │
-      └───────┬────────┘   └───────┬────────┘   └───────┬────────┘
-              │                    │                    │
-              └────────────────────┼────────────────────┘
-                                   ▼
-                         ┌───────────────────────┐
-                         │     Data Layer        │
-                         │ PostgreSQL / SQLite   │
-                         └───────────┬───────────┘
-                                     │
-                    ┌────────────────┴────────────────┐
-                    │                                 │
-                    ▼                                 ▼
-          ┌──────────────────┐             ┌──────────────────┐
-          │ Structured Data  │             │ Policy Documents │
-          │ Transactions     │             │ AML Policies     │
-          │ Accounts         │             │ Regulations      │
-          │ Customers        │             │ Internal Rules   │
-          └──────────────────┘             └────────┬─────────┘
-                                                    │
-                                                    ▼
-                                           ┌─────────────────┐
-                                           │ Vector Database │
-                                           │ FAISS / Chroma  │
-                                           └────────┬────────┘
-                                                    │
-                                                    ▼
-                                           ┌─────────────────┐
-                                           │ RAG Pipeline    │
-                                           └────────┬────────┘
-                                                    │
-                                                    ▼
-                                           ┌─────────────────┐
-                                           │      LLM        │
-                                           └─────────────────┘
+Risk Score =
+Transaction Anomaly
++ Transaction Velocity
++ Geographic Risk
++ Customer Risk
++ Device Risk
++ Beneficiary Risk
++ Historical Pattern
+```
+
+The score is normalized to:
+
+```text
+0 – 30     LOW
+31 – 60    MEDIUM
+61 – 80    HIGH
+81 – 100   CRITICAL
+```
+
+The platform displays both the final score and the individual contributing factors.
+
+---
+
+# 19. Security
+
+RegulaGuard AI incorporates security principles appropriate for financial applications.
+
+### Security Controls
+
+- Role-Based Access Control
+- Authentication
+- Input validation
+- API validation
+- Secure session handling
+- Audit logging
+- PII masking
+- Evidence access controls
+- Prompt injection protection
+- Data minimization
+
+Example PII masking:
+
+```text
+Rahul Sharma
+→ R**** S*****
+
+Account:
+XXXXXX8321
 ```
 
 ---
 
-# 🛠️ Technology Stack
+# 20. System Architecture
+
+```text
+                         ┌─────────────────────────┐
+                         │       Frontend          │
+                         │ React + TypeScript      │
+                         └────────────┬────────────┘
+                                      │
+                                      ▼
+                         ┌─────────────────────────┐
+                         │       API Layer         │
+                         │ FastAPI / REST APIs     │
+                         └────────────┬────────────┘
+                                      │
+             ┌────────────────────────┼────────────────────────┐
+             │                        │                        │
+             ▼                        ▼                        ▼
+      ┌──────────────┐        ┌──────────────┐        ┌──────────────┐
+      │ Risk Engine  │        │ Investigation│        │ Report Engine│
+      └──────┬───────┘        └──────┬───────┘        └──────┬───────┘
+             │                       │                       │
+             └───────────────────────┼───────────────────────┘
+                                     ▼
+                          ┌──────────────────────┐
+                          │     Data Layer       │
+                          │ PostgreSQL / SQLite  │
+                          └──────────┬───────────┘
+                                     │
+                  ┌──────────────────┴──────────────────┐
+                  │                                     │
+                  ▼                                     ▼
+        ┌────────────────────┐              ┌────────────────────┐
+        │ Structured Data    │              │ Policy Documents  │
+        │                    │              │                    │
+        │ Transactions       │              │ AML Policies       │
+        │ Accounts           │              │ Regulations        │
+        │ Customers          │              │ Internal Policies  │
+        │ Loans              │              │ Risk Documents     │
+        └────────────────────┘              └─────────┬──────────┘
+                                                       │
+                                                       ▼
+                                             ┌───────────────────┐
+                                             │ Vector Database   │
+                                             │ FAISS / Chroma    │
+                                             └─────────┬─────────┘
+                                                       │
+                                                       ▼
+                                             ┌───────────────────┐
+                                             │ RAG Pipeline      │
+                                             └─────────┬─────────┘
+                                                       │
+                                                       ▼
+                                             ┌───────────────────┐
+                                             │ LLM               │
+                                             └───────────────────┘
+```
+
+---
+
+# 21. Technology Stack
 
 ## Frontend
 
@@ -693,17 +907,18 @@ Audit Trail
 ## Database
 
 - PostgreSQL
-- SQLite for local/demo deployments
+- SQLite for local/demo deployment
 
-## AI / ML
+## AI
 
 - Large Language Model
 - Retrieval-Augmented Generation
 - Embeddings
 - Vector Search
+- Structured AI Outputs
 - Explainable Risk Scoring
 
-## Vector Database
+## Vector Search
 
 - FAISS
 - Chroma
@@ -719,7 +934,30 @@ Audit Trail
 
 ---
 
-# 📁 Project Structure
+# 22. Application Modules
+
+The platform contains the following primary modules:
+
+```text
+Dashboard
+Risk Signals
+Fraud Monitoring
+AML Monitoring
+Credit Risk
+Liquidity Risk
+AI Copilot
+Investigation Workspace
+Evidence Explorer
+Policy & Regulatory Intelligence
+Transaction Network
+Regulatory Reports
+Audit Trail
+Settings
+```
+
+---
+
+# 23. Project Structure
 
 ```text
 regulaguard-ai/
@@ -745,6 +983,7 @@ regulaguard-ai/
 │   │   ├── rag/
 │   │   ├── reports/
 │   │   └── audit/
+│   │
 │   ├── data/
 │   ├── requirements.txt
 │   └── main.py
@@ -758,320 +997,12 @@ regulaguard-ai/
 │   ├── schema.sql
 │   └── seed.sql
 │
-├── README.md
-└── .env.example
+├── .env.example
+└── README.md
 ```
 
 ---
 
-# ⚙️ Getting Started
+# 24. Demo Dataset
 
-## 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/regulaguard-ai.git
-
-cd regulaguard-ai
-```
-
-## 2. Install frontend dependencies
-
-```bash
-cd frontend
-npm install
-```
-
-## 3. Start frontend
-
-```bash
-npm run dev
-```
-
-## 4. Install backend dependencies
-
-```bash
-cd ../backend
-
-python -m venv venv
-```
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### macOS/Linux
-
-```bash
-source venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## 5. Configure environment variables
-
-Create:
-
-```text
-.env
-```
-
-Example:
-
-```env
-DATABASE_URL=sqlite:///./regulaguard.db
-
-LLM_API_KEY=your_api_key
-
-VECTOR_DB_PATH=./data/vector_db
-
-SECRET_KEY=change_this_secret
-```
-
-## 6. Start backend
-
-```bash
-uvicorn app.main:app --reload
-```
-
----
-
-# 🎬 Hackathon Demo Flow
-
-The recommended demonstration is a complete investigation.
-
-### Step 1 — Dashboard
-
-Show:
-
-> 🔴 Critical Risk Alert Detected
-
-### Step 2 — Open Transaction
-
-Transaction:
-
-```text
-₹8,75,000
-```
-
-Historical average:
-
-```text
-₹42,000
-```
-
-### Step 3 — Explain Risk
-
-Copilot identifies:
-
-- 20.8x transaction deviation
-- New beneficiary
-- New device
-- High transaction velocity
-- Geographic anomaly
-
-### Step 4 — Investigate
-
-Click:
-
-**Investigate Case**
-
-### Step 5 — Network Analysis
-
-Show connected accounts and suspicious transaction paths.
-
-### Step 6 — Ask Copilot
-
-> "Why is this transaction suspicious and which policy applies?"
-
-### Step 7 — Evidence
-
-Show the exact transactions and account history supporting the answer.
-
-### Step 8 — Policy
-
-Show the retrieved policy section.
-
-### Step 9 — Generate Finding
-
-```text
-Potential Suspicious Transaction Activity
-```
-
-### Step 10 — Generate Report
-
-Click:
-
-**Generate Audit-Ready Report**
-
-### Step 11 — Audit Trail
-
-Show every action recorded.
-
----
-
-# 🏆 Why RegulaGuard AI?
-
-Traditional systems often answer:
-
-> **“Alert detected.”**
-
-RegulaGuard AI answers:
-
-> **“Here is the alert, here is why it happened, here is the evidence, here is the applicable policy, here is the recommended action, and here is the audit-ready documentation.”**
-
-That is the core difference.
-
----
-
-# 📈 Business Impact
-
-RegulaGuard AI can help financial institutions:
-
-### Reduce Investigation Time
-
-Automate repetitive evidence gathering and policy lookup.
-
-### Improve Consistency
-
-Standardize risk investigation and documentation.
-
-### Improve Explainability
-
-Connect AI conclusions to actual evidence.
-
-### Improve Audit Readiness
-
-Maintain structured evidence and decision trails.
-
-### Scale Compliance Operations
-
-Allow analysts to investigate more alerts without proportionally increasing manual workload.
-
-### Reduce AI Risk
-
-Keep human approval in the decision loop.
-
----
-
-# 🎯 Target Users
-
-| User | Primary Use |
-|---|---|
-| 🕵️ Fraud Analyst | Fraud detection & investigation |
-| 🧾 AML Analyst | AML monitoring & case management |
-| 📊 Risk Analyst | Credit & enterprise risk |
-| 💧 Treasury/Risk Team | Liquidity monitoring |
-| ⚖️ Compliance Officer | Policy & regulatory compliance |
-| 🔍 Internal Auditor | Evidence & audit trail |
-| 👔 Risk Manager | Executive risk overview |
-
----
-
-# 🔮 Future Roadmap
-
-## Phase 1 — Current Prototype
-
-- Fraud detection
-- AML monitoring
-- Risk scoring
-- AI Copilot
-- RAG
-- Evidence explorer
-- Investigation workspace
-- Audit trail
-- Report generation
-
-## Phase 2
-
-- Real-time transaction streaming
-- Advanced ML anomaly detection
-- Graph-based fraud detection
-- Automated alert prioritization
-- Advanced behavioral analytics
-
-## Phase 3
-
-- Core banking integrations
-- Enterprise identity systems
-- Regulatory workflow integrations
-- Multi-bank deployment
-- Advanced model governance
-- Continuous compliance monitoring
-
----
-
-# ⚠️ Disclaimer
-
-RegulaGuard AI is a **hackathon/prototype system** intended to demonstrate AI-assisted risk and compliance workflows.
-
-It does not constitute legal, financial, regulatory, or compliance advice and should not be used to make autonomous regulatory decisions.
-
-All AI-generated findings and reports should undergo appropriate **human review and institutional approval** before operational or regulatory use.
-
----
-
-# 🌟 Key Innovation
-
-The innovation is not simply adding an LLM to banking data.
-
-RegulaGuard AI creates an **evidence-first compliance workflow**:
-
-```text
-             ┌──────────────┐
-             │    SIGNAL    │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │ INVESTIGATE  │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │   EVIDENCE   │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │    POLICY    │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │   EXPLAIN    │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │   FINDING    │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │    REPORT    │
-             └──────┬───────┘
-                    ↓
-             ┌──────────────┐
-             │ AUDIT TRAIL  │
-             └──────────────┘
-```
-
-## **RegulaGuard AI**
-
-### **Detect. Explain. Prove. Report.**
-
----
-
-## 👨‍💻 Built For
-
-**Hackathon Project — Banking / NBFC Risk & Compliance**
-
-Built with a focus on:
-
-`Real-World Relevance` · `Technical Execution` · `Solution Completeness`
-
----
-
-⭐ If you find this project interesting, consider starring the repository.
-
-**RegulaGuard AI — Turning Financial Risk Signals into Explainable, Evidence-Backed Decisions.**
+The prototype can operate using realistic
