@@ -1,0 +1,6 @@
+{
+  "name": "RegulaGuard AI",
+  "description": "Banking Risk, Fraud & Compliance Copilot – From Risk Signal to Audit-Ready Evidence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
