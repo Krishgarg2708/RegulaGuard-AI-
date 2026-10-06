@@ -11,6 +11,7 @@ import { WorkflowPipelineBar } from './components/WorkflowPipelineBar';
 import { DemoScenarioFloatingBar } from './components/DemoScenarioFloatingBar';
 import { CaseCompleteModal } from './components/CaseCompleteModal';
 import { ToastContainer } from './components/ToastContainer';
+import { SplashScreen } from './components/SplashScreen';
 
 import { DashboardView } from './views/DashboardView';
 import { RiskSignalsView } from './views/RiskSignalsView';
@@ -171,9 +172,12 @@ const MainAppContent: React.FC = () => {
 };
 
 export default function App() {
+  const [showSplash, setShowSplash] = useState<boolean>(true);
+
   return (
     <AppProvider>
       <MainAppContent />
+      {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
     </AppProvider>
   );
 }
